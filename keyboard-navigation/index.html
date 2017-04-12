@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="../css/style.css" media="screen" charset="utf-8">
   </head>
   <body>
+    <!--
+      1 - press TAB as soon as page loads.
+      2 - it will focus on the skip to main navigation link.
+      3 - on click, it will take you to the #main div
+    -->
+    <a href="#main" id="skip-link">
+      Skip to main navigation
+    </a>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -122,8 +130,12 @@ embed,
                 <option>Black</option>
               </select>
               <input type="checkbox"> Remember me
-              <div class="btn btn-default">Cancel</div>
-              <div class="btn btn-primary">Submit</div>
+              <!--
+                1 - changed cancel div to button
+                2 - changed submit div to input:type submit
+               -->
+              <button class="btn btn-default">Cancel</button>
+              <input type="submit" class="btn btn-primary" value="Submit" />
             </fieldset>
           </form>
         </main>
@@ -131,6 +143,5 @@ embed,
     </div>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/focus.js"></script>
   </body>
 </html>
